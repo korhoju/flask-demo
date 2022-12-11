@@ -1,0 +1,134 @@
+head, body {
+    font-family: 'Roboto Mono', monospace;
+    /*font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-family: 'Varela Round', sans-serif */
+    background-color: #FFF8EE;
+    background-image: url("/static/img/background4.svg");
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    width: 35%;
+
+}
+.header {
+    display: flex;
+    color: transparent;
+    width: 100%;
+    margin: 0 2rem;
+    justify-content: end;
+}
+
+li a {
+    width: 10rem;
+    line-height: 3rem;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+
+nav {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    letter-spacing: 3px;
+}
+
+.button {
+        font-weight: bold;
+
+    background-color: #190F30;
+    color: #FFF8EE;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-evenly;
+    display: inline-block;
+    border-radius: 2rem;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0), 0 17px 50px 0 rgba(0, 0, 0, 0);
+    position: relative;
+    top: 0;
+    transition: all 0.2s;
+
+}
+
+.button:hover {
+    color: #190F30;
+    background-color: #FFF8EE;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    top: -10px;
+}
+
+main {
+    height: 100%;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 2rem;
+
+}
+.welcome p{
+    width: 60%;
+    margin: 0;
+}
+.start{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.start a {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding: 2rem 5rem;
+}
+
+.game{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 2rem;
+}
+
+.scoreboard {
+
+}
+
+#map {
+    height: 500px;
+    /* The height is 400 pixels */
+    width: 70%;
+    /* The width is the width of the web page */
+}
+

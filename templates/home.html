@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"/>-->
+    <link href="{{ url_for('static', filename= 'css/style.css') }}" rel="stylesheet">
+    <!--script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" defer></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js" defer></script>
+    <script src="js/main.js" defer></script>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Timmana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Varela+Round&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>The Green Miles</title>
+</head>
+
+<body>
+<div class="container">
+    <header class="header">
+        <nav>
+            <ul>
+                <li>
+                    <a class="button" href="{{ url_for('game') }}">Peli</a>
+                </li>
+                <li>
+                    <a class="button" href="{{ url_for('tulokset') }}">Tulokset</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="logo">
+            <img src="{{ url_for('static', filename= 'img/logo5.png') }}" alt="green-flight">
+        </div>
+        <section class="welcome">
+            <header>
+                <h2>Tervetuloa lentopeliin!</h2>
+            </header>
+            <p>Lähdet etelään pakoon pimeää ja kylmää Helsinkiä.<br>
+                Lentoliikenne takkuaa ja joudut tekemään viisi välilaskua matkallasi.<br><br>
+                Tehtäväsi on valita välilaskukentät annetuista vaihtoehdoista niin, että reittisi
+                kohteeseen on mahdollisimman lyhyt.<br>
+                Onnea matkaan!</p>
+        </section>
+        <div class="start">
+            <a class="button" href="{{ url_for('game') }}"> ALOITA PELI</a>
+        </div>
+    </main>
+</div>
+</body>
+
+</html>

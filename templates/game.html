@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link href="{{ url_for('static', filename= 'css/style.css') }}" rel="stylesheet">
+
+
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <nav>
+            <ul>
+                <li>
+                    <a class="button" href="{{ url_for('home') }}">Etusivu</a>
+                </li>
+                <li>
+                    <a class="button" href="{{ url_for('tulokset') }}">Tulokset</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="logo">
+            <img src="{{ url_for('static', filename= 'img/logo5.png') }}" alt="green-flight">
+        </div>
+        <div class="game">
+            <div id="questions">
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </div>
+            <div id="map">
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSUb6XAdXKp7TBvCGW0W0XUTBK30_hChg">
+                </script>
+            </div>
+        </div>
+    </main>
+</div>
+
+
+</body>
+</html>
+<script type="module" src="/JS/main.js"></script>
+
